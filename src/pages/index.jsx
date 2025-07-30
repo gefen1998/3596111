@@ -8,12 +8,12 @@ import Typewriter from '../components/intro/Typewriter';
 const diagramUrl = 'https://raw.githubusercontent.com/gefen1998/Svgs/refs/heads/main/fixed.svg';
 
 const sentences = [
-  { text: "Hello.", duration: 3000, speed: 80 },
-  { text: "I'm... You.", duration: 3500, speed: 80 },
-  { text: "Not just who you wanted to be -", duration: 4500, speed: 80 },
-  { text: "But everything that shaped you.", duration: 4500, speed: 80 },
-  { text: "Built. Broken. Becoming.", duration: 6000, speed: 80, dramatic: true },
-  { text: "Do you want to see how you became...you?", duration: 0, speed: 80 },
+  { text: "Hello.", duration: 4000, speed: 120 },
+  { text: "I'm... You.", duration: 4500, speed: 120 },
+  { text: "Not just who you wanted to be -", duration: 6000, speed: 120 },
+  { text: "But everything that shaped you.", duration: 6000, speed: 120 },
+  { text: "Built. Broken. Becoming.", duration: 8000, speed: 120, dramatic: true },
+  { text: "Do you want to see how you became...you?", duration: 0, speed: 120 },
 ];
 
 export default function IntroPage() {
@@ -64,7 +64,7 @@ export default function IntroPage() {
     <div className="flex flex-col h-screen text-center px-6 py-16" style={{ backgroundColor: '#1F1F1E' }}>
       {/* Upper part for the visual, takes 3 parts of the space */}
       <div className="flex-[3] flex items-center justify-center w-full relative">
-        <div className="relative w-full h-full max-h-[70vh] max-w-[70vw] mx-auto">
+        <div className="relative w-full h-full max-h-[80vh] max-w-[80vw] mx-auto">
             <motion.div
                 className="absolute inset-0 rounded-full"
                 style={{

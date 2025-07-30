@@ -26,6 +26,7 @@
 .btn-primary:hover {
   background-color: rgba(255, 255, 255, 0.08) !important;
   border-color: rgba(255, 255, 255, 0.8) !important;
+  transform: scale(0.98) !important;
 }
 
 .btn-secondary {
@@ -33,10 +34,12 @@
   color: #BBBBBB !important;
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-secondary:active {
   background-color: rgba(255, 255, 255, 0.05) !important;
   color: #FFFFFF !important;
   border-color: rgba(255, 255, 255, 0.6) !important;
+  transform: scale(0.98) !important;
 }
 
 .btn-selected {
@@ -47,16 +50,13 @@
 
 .btn-base:focus {
   outline: none !important;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2) !important;
-}
-
-.btn-base:active {
-  transform: scale(0.98) !important;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3) !important;
 }
 
 .btn-base:disabled {
   opacity: 0.5 !important;
   cursor: not-allowed !important;
+  transform: none !important;
 }
 
 /* Ensure IBM Plex Sans is loaded */
@@ -70,12 +70,12 @@ a.btn-base,
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  border-radius: 24px !important;
+  border-radius: 18px !important;
   padding: 16px 32px !important;
   font-size: 16px !important;
   font-weight: 500 !important;
   line-height: 1 !important;
-  transition: all 0.2s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
   border: 1px solid rgba(255, 255, 255, 0.4) !important;
   text-decoration: none !important;
   cursor: pointer !important;
@@ -84,4 +84,11 @@ a.btn-base,
   color: #FFFFFF !important;
   font-family: 'IBM Plex Sans', sans-serif !important;
   box-sizing: border-box !important;
+  /* Touch-friendly improvements */
+  min-height: 48px !important;
+  min-width: 120px !important;
+  -webkit-tap-highlight-color: transparent !important;
+  user-select: none !important;
 }
+.btn-primary:hover,
+.btn-primary:active {

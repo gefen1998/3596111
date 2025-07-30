@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function Typewriter({ text, speed = 60, dramatic = false, onComplete }) {
+export default function Typewriter({ text, speed = 100, dramatic = false, onComplete }) {
   const [displayedText, setDisplayedText] = useState('');
 
   useEffect(() => {
@@ -41,7 +41,7 @@ export default function Typewriter({ text, speed = 60, dramatic = false, onCompl
             if (wordIdx < words.length) {
               currentText += ' ';
               setDisplayedText(currentText);
-              timeoutId = setTimeout(typeWord, 800); // Pause between words
+              timeoutId = setTimeout(typeWord, 1200); // Longer pause between words
             } else {
               if (onComplete) onComplete();
             }
