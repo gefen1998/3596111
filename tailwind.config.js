@@ -92,18 +92,18 @@ module.exports = {
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
-  		}
-  	}
-  		spacing: {
-  			'base44-btn-x': '24px',
-  			'base44-btn-y': '12px',
-  		},
-  		fontSize: {
-  			'base44-btn': '16px',
-  		},
-  		fontWeight: {
-  			'base44-medium': '500',
-  		},
+		},
+		spacing: {
+			'base44-btn-x': '24px',
+			'base44-btn-y': '12px',
+		},
+		fontSize: {
+			'base44-btn': '16px',
+		},
+		fontWeight: {
+			'base44-medium': '500',
+		}
+  	},
   },
   plugins: [require("tailwindcss-animate")],
 }
