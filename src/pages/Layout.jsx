@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export default function Layout({ children }) {
@@ -44,21 +43,22 @@ export default function Layout({ children }) {
           cursor: pointer;
           white-space: nowrap;
           background-color: transparent;
+          color: var(--foreground);
         }
 
         .btn-primary {
-          color: var(--foreground);
           border-color: rgba(255, 255, 255, 0.6);
+          color: var(--foreground);
         }
         
         .btn-primary:hover {
-          background-color: rgba(255, 255, 255, 0.05);
+          background-color: rgba(255, 255, 255, 0.08);
           border-color: rgba(255, 255, 255, 0.8);
         }
         
         .btn-secondary {
-          color: var(--secondary);
           border-color: rgba(255, 255, 255, 0.3);
+          color: var(--secondary);
         }
 
         .btn-secondary:hover {
@@ -68,15 +68,14 @@ export default function Layout({ children }) {
         }
         
         .btn-selected {
-          background-color: rgba(255, 255, 255, 0.08);
+          background-color: rgba(255, 255, 255, 0.1);
           color: var(--foreground);
           border-color: rgba(255, 255, 255, 0.8);
         }
         
-        /* Additional Base44 button utilities */
         .btn-base:focus {
           outline: none;
-          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
         }
         
         .btn-base:active {
