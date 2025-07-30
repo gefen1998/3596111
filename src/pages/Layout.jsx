@@ -33,55 +33,54 @@ export default function Layout({ children }) {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          border-radius: 18px;
-          padding: 12px 24px;
+          border-radius: 24px;
+          padding: 16px 32px;
           font-size: 16px;
           font-weight: 500;
           line-height: 1;
           transition: all 0.2s ease-in-out;
-          border: 1.5px solid transparent;
+          border: 1px solid rgba(255, 255, 255, 0.4);
           text-decoration: none;
           cursor: pointer;
           white-space: nowrap;
+          background-color: transparent;
         }
 
         .btn-primary {
           color: var(--foreground);
-          border-color: var(--foreground);
-          background-color: transparent;
+          border-color: rgba(255, 255, 255, 0.6);
         }
         
         .btn-primary:hover {
-          background-color: var(--btn-bg-hover);
-          border-color: var(--foreground);
+          background-color: rgba(255, 255, 255, 0.05);
+          border-color: rgba(255, 255, 255, 0.8);
         }
         
         .btn-secondary {
           color: var(--secondary);
-          border-color: var(--secondary);
-          background-color: transparent;
+          border-color: rgba(255, 255, 255, 0.3);
         }
 
         .btn-secondary:hover {
-          background-color: var(--btn-bg-hover);
+          background-color: rgba(255, 255, 255, 0.05);
           color: var(--foreground);
-          border-color: var(--foreground);
+          border-color: rgba(255, 255, 255, 0.6);
         }
         
         .btn-selected {
-          background-color: var(--btn-bg-hover);
+          background-color: rgba(255, 255, 255, 0.08);
           color: var(--foreground);
-          border-color: var(--foreground);
+          border-color: rgba(255, 255, 255, 0.8);
         }
         
         /* Additional Base44 button utilities */
         .btn-base:focus {
           outline: none;
-          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
         }
         
         .btn-base:active {
-          transform: translateY(1px);
+          transform: scale(0.98);
         }
         
         .btn-base:disabled {
