@@ -1,0 +1,87 @@
+/* Base44 Button Style Overrides */
+.btn-base {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 24px !important;
+  padding: 16px 32px !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+  transition: all 0.2s ease-in-out !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  background-color: transparent !important;
+  color: #FFFFFF !important;
+  font-family: 'IBM Plex Sans', sans-serif !important;
+}
+
+.btn-primary {
+  border-color: rgba(255, 255, 255, 0.6) !important;
+  color: #FFFFFF !important;
+}
+
+.btn-primary:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.btn-secondary {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  color: #BBBBBB !important;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: #FFFFFF !important;
+  border-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.btn-selected {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #FFFFFF !important;
+  border-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.btn-base:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2) !important;
+}
+
+.btn-base:active {
+  transform: scale(0.98) !important;
+}
+
+.btn-base:disabled {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+}
+
+/* Ensure IBM Plex Sans is loaded */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+/* Override any Base44 button styles */
+button.btn-base,
+a.btn-base,
+.btn-base {
+  all: unset !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 24px !important;
+  padding: 16px 32px !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+  transition: all 0.2s ease-in-out !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  background-color: transparent !important;
+  color: #FFFFFF !important;
+  font-family: 'IBM Plex Sans', sans-serif !important;
+  box-sizing: border-box !important;
+}
