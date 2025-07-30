@@ -4,12 +4,22 @@ module.exports = {
     content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
   	extend: {
+  		fontFamily: {
+  			'sans': ['IBM Plex Sans', 'system-ui', 'sans-serif'],
+  		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
+  			sm: 'calc(var(--radius) - 4px)',
+  			'base44': '18px'
   		},
   		colors: {
+  			'base44': {
+  				background: '#1F1F1E',
+  				foreground: '#FFFFFF',
+  				secondary: '#BBBBBB',
+  				'btn-hover': 'rgba(255, 255, 255, 0.0784)',
+  			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -84,6 +94,16 @@ module.exports = {
   			'accordion-up': 'accordion-up 0.2s ease-out'
   		}
   	}
+  		spacing: {
+  			'base44-btn-x': '24px',
+  			'base44-btn-y': '12px',
+  		},
+  		fontSize: {
+  			'base44-btn': '16px',
+  		},
+  		fontWeight: {
+  			'base44-medium': '500',
+  		},
   },
   plugins: [require("tailwindcss-animate")],
 }

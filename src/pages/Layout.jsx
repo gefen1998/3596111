@@ -40,20 +40,26 @@ export default function Layout({ children }) {
           line-height: 1;
           transition: all 0.2s ease-in-out;
           border: 1.5px solid transparent;
+          text-decoration: none;
+          cursor: pointer;
+          white-space: nowrap;
         }
 
         .btn-primary {
           color: var(--foreground);
           border-color: var(--foreground);
+          background-color: transparent;
         }
         
         .btn-primary:hover {
           background-color: var(--btn-bg-hover);
+          border-color: var(--foreground);
         }
         
         .btn-secondary {
           color: var(--secondary);
           border-color: var(--secondary);
+          background-color: transparent;
         }
 
         .btn-secondary:hover {
@@ -66,6 +72,21 @@ export default function Layout({ children }) {
           background-color: var(--btn-bg-hover);
           color: var(--foreground);
           border-color: var(--foreground);
+        }
+        
+        /* Additional Base44 button utilities */
+        .btn-base:focus {
+          outline: none;
+          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+        }
+        
+        .btn-base:active {
+          transform: translateY(1px);
+        }
+        
+        .btn-base:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
         }
       `}</style>
       <main className="min-h-screen" style={{ backgroundColor: '#1F1F1E' }}>
